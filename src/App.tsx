@@ -127,6 +127,32 @@ function App() {
         ) : null
       )}
 
+      <section className="faq">
+        <h2>Where do the OOMs come from?</h2>
+        <p className="faq-intro">
+          An OOM (Order of Magnitude) = 10x improvement. From GPT-2 to GPT-4, we gained ~5 OOMs.
+          According to Leopold Aschenbrenner's <a href="https://situational-awareness.ai/" target="_blank" rel="noopener">Situational Awareness</a> essay,
+          the next wave comes from three sources:
+        </p>
+        <div className="faq-grid">
+          <div className="faq-item">
+            <h3>Compute</h3>
+            <span className="faq-rate">~0.5 OOMs/year</span>
+            <p>Bigger clusters, more GPUs, longer training runs. GPT-4 used 10,000x more compute than GPT-2.</p>
+          </div>
+          <div className="faq-item">
+            <h3>Algorithms</h3>
+            <span className="faq-rate">~0.5 OOMs/year</span>
+            <p>Better architectures and training methods. Hitting 50% on MATH got 1000x cheaper in just 2 years.</p>
+          </div>
+          <div className="faq-item">
+            <h3>Unhobbling</h3>
+            <span className="faq-rate">Unlocks latent capability</span>
+            <p>RLHF, chain-of-thought, tool use, and scaffolding let models use what they already know.</p>
+          </div>
+        </div>
+      </section>
+
       <footer className="footer">
         <p className="perspective">
           What's the ceiling? Maybe we're already there. Maybe not.<br />
